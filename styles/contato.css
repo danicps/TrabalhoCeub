@@ -3,17 +3,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
 
+}
+.satisfy-regular {
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+body{
+    background-image: url(../images/flor.png);
+}
 /* Estilização do Header */
 header {
-    background-color: #004d40;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(107, 42, 42);
     padding: 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-family: "Satisfy";
 }
 
 header .logo img {
@@ -27,7 +36,7 @@ header h1 {
 }
 
 nav a {
-    color: white;
+    color: rgb(88, 27, 27);
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
@@ -49,7 +58,7 @@ nav a:hover {
 }
 
 .container h1 {
-    color: #004d40;
+    color: #4d0004;
     margin-bottom: 10px;
 }
 
@@ -64,7 +73,7 @@ nav a:hover {
 .container button {
     width: 100%;
     padding: 10px;
-    background-color: #004d40;
+    background-color: #000000;
     color: white;
     border: none;
     border-radius: 5px;
@@ -74,7 +83,7 @@ nav a:hover {
 }
 
 .container button:hover {
-    background-color: #00796b;
+    background-color: #0c0c0c;
 }
 
 /* Seção de Localização */
@@ -84,7 +93,7 @@ nav a:hover {
 }
 
 .localizacao h1 {
-    color: #004d40;
+    color: #4d0000;
     margin-bottom: 15px;
 }
 
@@ -98,7 +107,7 @@ nav a:hover {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #004d40;
+    background-color: #4d0000;
     color: white;
     margin-top: 30px;
 }

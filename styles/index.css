@@ -1,27 +1,41 @@
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
-/* Header */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+.satisfy-regular {
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+}
+
 header {
-    background-color: #004d40;
-    color: white;
-    padding: 15px;
-    text-align: center;
+    background-color: #ffffff;
+    color: #6b2a2a;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Satisfy", cursive;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 header .logo img {
     width: 120px;
     display: block;
-    margin: 0 auto;
 }
 
 header h1 {
-    font-size: 22px;
+    font-size: 24px;
     margin-top: 10px;
 }
 
@@ -30,64 +44,76 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: #812929;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 12px;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
     text-decoration: underline;
+    color: #a94442;
 }
 
-/* Estilização do Carrossel */
 .carousel-item img {
-    height: 500px;
+    height: 400px;
     object-fit: cover;
+    width: 80%;
 }
 
-/* Seção Sobre Nós */
 .bannerNos {
     text-align: center;
-    padding: 30px;
-    background: #e0f2f1;
+    padding: 50px 20px;
+    background: #e9dcdc;
+    margin-top: 40px; /* Adiciona espaço acima */
+    margin-bottom: 40px; /* Adiciona espaço abaixo */
 }
 
+
 .bannerNos h2 {
-    color: #004d40;
-    margin-bottom: 15px;
+    color: #4d000a;
+    margin-bottom: 20px;
+    font-size: 2rem;
 }
 
 .bannerNos p {
-    color: #333;
+    color: #160202;
     font-size: 18px;
     max-width: 800px;
     margin: 0 auto;
 }
 
-/* Seção de Serviços */
 .servicos {
     text-align: center;
-    padding: 40px;
+    padding: 60px 20px;
+    background-color: #fdfdfd;
 }
 
 .servicos h2 {
-    color: #004d40;
-    margin-bottom: 20px;
+    color: #4d0006;
+    margin-bottom: 30px;
+    font-size: 2rem;
 }
 
 .galeria {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
 }
 
 .servico {
     width: 300px;
-    background: #f5f5f5;
-    border-radius: 8px;
+    background: #ffffff;
+    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.servico:hover {
+    transform: translateY(-5px);
 }
 
 .servico img {
@@ -99,13 +125,79 @@ nav a:hover {
 .descricao {
     padding: 15px;
     color: #333;
+    font-size: 15px;
 }
 
-/* Footer */
 footer {
     text-align: center;
-    padding: 10px;
-    background-color: #004d40;
-    color: white;
-    margin-top: 30px;
+    padding: 15px;
+    background-color: #4d0000;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+.card .col-md-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.card .col-md-4 img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.nossos-especialistas {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f7faff;
+}
+
+.nossos-especialistas h1 {
+    font-size: 2.5rem;
+    color: #004aad;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.especialistas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+@media (max-width: 768px) {
+    .especialistas-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+
+    .galeria {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servico {
+        width: 90%;
+    }
 }
