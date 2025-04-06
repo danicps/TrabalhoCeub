@@ -1,4 +1,3 @@
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +13,7 @@
 body{
     background-image: url(../images/flor.png);
 }
-/* Estilização do Header */
+
 header {
     background-color: #ffffff;
     color: rgb(107, 42, 42);
@@ -27,6 +26,7 @@ header {
 
 header .logo img {
     width: 120px;
+    display: block;
 }
 
 header h1 {
@@ -46,7 +46,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Container do formulário */
+
 .container {
     width: 50%;
     margin: 30px auto;
@@ -86,7 +86,7 @@ nav a:hover {
     background-color: #0c0c0c;
 }
 
-/* Seção de Localização */
+
 .localizacao {
     text-align: center;
     margin-top: 40px;
@@ -103,11 +103,11 @@ nav a:hover {
     border-radius: 8px;
 }
 
-/* Footer */
 footer {
     text-align: center;
-    padding: 10px;
-    background-color: #4d0000;
-    color: white;
-    margin-top: 30px;
+    padding: 15px;
+    background-color: #e0caca;
+    color: #050505;
+    font-size: 14px;
+    margin-top: 40px;
 }
