@@ -42,4 +42,4 @@ Este projeto é uma **landing page estática** desenvolvida como parte de um tra
    ```bash
    git clone https://github.com/seu-usuario/nome-do-repositorio.git
 
-2. Github Pages 
+2. Github Pages: https://danicps.github.io/TrabalhoCeub/
